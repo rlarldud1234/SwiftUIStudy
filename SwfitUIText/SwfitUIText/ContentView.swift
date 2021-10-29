@@ -19,25 +19,42 @@ struct ContentView: View {
                     .padding()
                 
                 VStack(spacing: 5) {
-                TextField("아이디를 입력해주세요", text: $id)
-                        .frame(width: 300, height: 30, alignment: .leading)
+                TextField("  아이디를 입력해주세요", text: $id)
+                        .frame(width: 300, height: 40, alignment: .leading)
                         .keyboardType(.default)
                     .background(Color.white)
+                    .font(.caption)
+                    .border(Color.black, width: 1)
                     .padding()
                 
-                TextField("비밀번호를 입력해주세요", text: $pw)
-                        .frame(width: 300, height: 30, alignment: .leading)
+                TextField("  비밀번호를 입력해주세요", text: $pw)
+                        .frame(width: 300, height: 40, alignment: .leading)
                         .keyboardType(.default)
                     .background(Color.white)
+                    .font(.caption)
+                    .border(Color.black, width: 1)
                     .padding()
                 }
                 
                 Button(action: {}) {
                     Text("로그인")
-                        .frame(width: 80, height: 30, alignment: .center)
-                        .font(.body)
-                        .foregroundColor(.init(.blue))
-                        .background(Color.white)
+                        .frame(width: 300, height: 50, alignment: .center)
+                        .font(.title)
+                        .foregroundColor(.init(.white))
+                        .background(Color.green)
+                        .cornerRadius(10)
+                }
+                
+                HStack {
+                    Text("아직 회원가입을 안하셨다면 ->")
+                        .font(.caption)
+                    
+                    Button(action: {}){
+                        Text("회원가입")
+                            .underline(true, color: Color.blue )
+                            .font(.caption)
+                            .foregroundColor(.blue)
+                    }
                 }
             }
         }
