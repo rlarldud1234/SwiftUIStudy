@@ -13,7 +13,7 @@ struct MainView: View {
             Section(header: Text("섹션1")){
                 ForEach(1...5, id:\.self){index in
                     CellView(icon: "book.fill", title: "책을 읽으세요  \(index)", start: "pm 1", end: "pm 10", color: Color.pink)
-                }.listRowInsets(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
+                }
             }.listRowInsets(.init(top: 10, leading: 10, bottom: 10, trailing: 10))
             
             Section(header: Text("섹션2")){
