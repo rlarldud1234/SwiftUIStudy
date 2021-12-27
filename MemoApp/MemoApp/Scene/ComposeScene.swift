@@ -26,7 +26,10 @@ struct ComposeScene: View {
             }
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .navigationBarTitle(memo != nil ? "메모 편집" : "메모 추가하기", displayMode: .inline)
-            .navigationBarItems(leading: DismissButton(show: $show), trailing: SetButton(show: $show, content: $content))
+            .navigationBarItems(leading: DismissButton(show: $show), trailing: SetButton(show: $show, content: $content, memo: memo))
+        }
+        .onAppear {
+            self.content = self.memo!.content
         }
     }
 }
@@ -49,9 +52,15 @@ fileprivate struct SetButton: View {
     @EnvironmentObject var store: MemoStore
     @Binding var content: String
     
+    var memo: Memo? = nil
+    
     var body: some View {
         Button(action: {
-            self.store.insert(memo: self.content)
+            if let memo = self.memo {
+                self.store.insert(memo: self.content)
+            } else {
+                self.store.insert(memo: self.content)
+            }
             
             self.show = false
         }, label: {

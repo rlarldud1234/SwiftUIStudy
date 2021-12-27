@@ -12,6 +12,8 @@ struct DetailScene: View {
     
     @EnvironmentObject var store: MemoStore
     @EnvironmentObject var formatter: DateFormatter
+    
+    @State private var showEditSheet = false
     var body: some View {
         VStack {
             ScrollView {
@@ -31,6 +33,18 @@ struct DetailScene: View {
                         
                         Spacer()
                     }
+                }
+                HStack {
+                    Button(action: {
+                        self.showEditSheet.toggle()
+                    }, label: {
+                        Image(systemName: "square.and.pencil")
+                    }).padding()
+                        .sheet(isPresented: $showEditSheet,  content: {
+                            ComposeScene(memo: self.memo, show: $showEditSheet)
+                                .environmentObject(self.store)
+                                .environmentObject(KeyboardObserver())
+                        })
                 }
             }
         }
