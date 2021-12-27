@@ -7,28 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		387CC587270721FA00661F21 /* SwfitUITextApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CC586270721FA00661F21 /* SwfitUITextApp.swift */; };
-		387CC589270721FA00661F21 /* SignInVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387CC588270721FA00661F21 /* SignInVIew.swift */; };
-		387CC58B270721FB00661F21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387CC58A270721FB00661F21 /* Assets.xcassets */; };
-		387CC58E270721FB00661F21 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 387CC58D270721FB00661F21 /* Preview Assets.xcassets */; };
-		387E97BF272CA983005E6CC6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E97BE272CA983005E6CC6 /* SignUpView.swift */; };
-		387E97C3272D8600005E6CC6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E97C2272D8600005E6CC6 /* MainView.swift */; };
-		387E97C5272D8835005E6CC6 /* CellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 387E97C4272D8835005E6CC6 /* CellView.swift */; };
+		38959059277937A800F88071 /* MemoAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38959058277937A800F88071 /* MemoAppApp.swift */; };
+		3895905B277937A800F88071 /* MemoListScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3895905A277937A800F88071 /* MemoListScene.swift */; };
+		3895905D277937AA00F88071 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3895905C277937AA00F88071 /* Assets.xcassets */; };
+		38959060277937AA00F88071 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3895905F277937AA00F88071 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		387CC583270721FA00661F21 /* SwfitUIText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwfitUIText.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		387CC586270721FA00661F21 /* SwfitUITextApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwfitUITextApp.swift; sourceTree = "<group>"; };
-		387CC588270721FA00661F21 /* SignInVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVIew.swift; sourceTree = "<group>"; };
-		387CC58A270721FB00661F21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		387CC58D270721FB00661F21 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		387E97BE272CA983005E6CC6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
-		387E97C2272D8600005E6CC6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		387E97C4272D8835005E6CC6 /* CellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellView.swift; sourceTree = "<group>"; };
+		38959055277937A800F88071 /* MemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		38959058277937A800F88071 /* MemoAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoAppApp.swift; sourceTree = "<group>"; };
+		3895905A277937A800F88071 /* MemoListScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoListScene.swift; sourceTree = "<group>"; };
+		3895905C277937AA00F88071 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3895905F277937AA00F88071 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		387CC580270721FA00661F21 /* Frameworks */ = {
+		38959052277937A800F88071 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -38,40 +32,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		387CC57A270721FA00661F21 = {
+		3895904C277937A800F88071 = {
 			isa = PBXGroup;
 			children = (
-				387CC585270721FA00661F21 /* SwfitUIText */,
-				387CC584270721FA00661F21 /* Products */,
+				38959057277937A800F88071 /* MemoApp */,
+				38959056277937A800F88071 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		387CC584270721FA00661F21 /* Products */ = {
+		38959056277937A800F88071 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				387CC583270721FA00661F21 /* SwfitUIText.app */,
+				38959055277937A800F88071 /* MemoApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		387CC585270721FA00661F21 /* SwfitUIText */ = {
+		38959057277937A800F88071 /* MemoApp */ = {
 			isa = PBXGroup;
 			children = (
-				387CC586270721FA00661F21 /* SwfitUITextApp.swift */,
-				387CC588270721FA00661F21 /* SignInVIew.swift */,
-				387E97BE272CA983005E6CC6 /* SignUpView.swift */,
-				387CC58A270721FB00661F21 /* Assets.xcassets */,
-				387CC58C270721FB00661F21 /* Preview Content */,
-				387E97C2272D8600005E6CC6 /* MainView.swift */,
-				387E97C4272D8835005E6CC6 /* CellView.swift */,
+				38959058277937A800F88071 /* MemoAppApp.swift */,
+				3895905A277937A800F88071 /* MemoListScene.swift */,
+				3895905C277937AA00F88071 /* Assets.xcassets */,
+				3895905E277937AA00F88071 /* Preview Content */,
 			);
-			path = SwfitUIText;
+			path = MemoApp;
 			sourceTree = "<group>";
 		};
-		387CC58C270721FB00661F21 /* Preview Content */ = {
+		3895905E277937AA00F88071 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				387CC58D270721FB00661F21 /* Preview Assets.xcassets */,
+				3895905F277937AA00F88071 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -79,39 +70,39 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		387CC582270721FA00661F21 /* SwfitUIText */ = {
+		38959054277937A800F88071 /* MemoApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 387CC591270721FB00661F21 /* Build configuration list for PBXNativeTarget "SwfitUIText" */;
+			buildConfigurationList = 38959063277937AA00F88071 /* Build configuration list for PBXNativeTarget "MemoApp" */;
 			buildPhases = (
-				387CC57F270721FA00661F21 /* Sources */,
-				387CC580270721FA00661F21 /* Frameworks */,
-				387CC581270721FA00661F21 /* Resources */,
+				38959051277937A800F88071 /* Sources */,
+				38959052277937A800F88071 /* Frameworks */,
+				38959053277937A800F88071 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwfitUIText;
-			productName = SwfitUIText;
-			productReference = 387CC583270721FA00661F21 /* SwfitUIText.app */;
+			name = MemoApp;
+			productName = MemoApp;
+			productReference = 38959055277937A800F88071 /* MemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		387CC57B270721FA00661F21 /* Project object */ = {
+		3895904D277937A800F88071 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
-				LastUpgradeCheck = 1300;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					387CC582270721FA00661F21 = {
-						CreatedOnToolsVersion = 13.0;
+					38959054277937A800F88071 = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
 			};
-			buildConfigurationList = 387CC57E270721FA00661F21 /* Build configuration list for PBXProject "SwfitUIText" */;
+			buildConfigurationList = 38959050277937A800F88071 /* Build configuration list for PBXProject "MemoApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -119,45 +110,42 @@
 				en,
 				Base,
 			);
-			mainGroup = 387CC57A270721FA00661F21;
-			productRefGroup = 387CC584270721FA00661F21 /* Products */;
+			mainGroup = 3895904C277937A800F88071;
+			productRefGroup = 38959056277937A800F88071 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				387CC582270721FA00661F21 /* SwfitUIText */,
+				38959054277937A800F88071 /* MemoApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		387CC581270721FA00661F21 /* Resources */ = {
+		38959053277937A800F88071 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387CC58E270721FB00661F21 /* Preview Assets.xcassets in Resources */,
-				387CC58B270721FB00661F21 /* Assets.xcassets in Resources */,
+				38959060277937AA00F88071 /* Preview Assets.xcassets in Resources */,
+				3895905D277937AA00F88071 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		387CC57F270721FA00661F21 /* Sources */ = {
+		38959051277937A800F88071 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				387CC589270721FA00661F21 /* SignInVIew.swift in Sources */,
-				387E97C5272D8835005E6CC6 /* CellView.swift in Sources */,
-				387E97C3272D8600005E6CC6 /* MainView.swift in Sources */,
-				387E97BF272CA983005E6CC6 /* SignUpView.swift in Sources */,
-				387CC587270721FA00661F21 /* SwfitUITextApp.swift in Sources */,
+				3895905B277937A800F88071 /* MemoListScene.swift in Sources */,
+				38959059277937A800F88071 /* MemoAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		387CC58F270721FB00661F21 /* Debug */ = {
+		38959061277937AA00F88071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +196,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -218,7 +206,7 @@
 			};
 			name = Debug;
 		};
-		387CC590270721FB00661F21 /* Release */ = {
+		38959062277937AA00F88071 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -263,7 +251,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,14 +261,14 @@
 			};
 			name = Release;
 		};
-		387CC592270721FB00661F21 /* Debug */ = {
+		38959064277937AA00F88071 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwfitUIText/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -288,13 +276,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kiyoung.SwfitUIText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlarldud1234.MemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -302,14 +289,14 @@
 			};
 			name = Debug;
 		};
-		387CC593270721FB00661F21 /* Release */ = {
+		38959065277937AA00F88071 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"SwfitUIText/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"MemoApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -317,13 +304,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = kiyoung.SwfitUIText;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rlarldud1234.MemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -334,25 +320,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		387CC57E270721FA00661F21 /* Build configuration list for PBXProject "SwfitUIText" */ = {
+		38959050277937A800F88071 /* Build configuration list for PBXProject "MemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				387CC58F270721FB00661F21 /* Debug */,
-				387CC590270721FB00661F21 /* Release */,
+				38959061277937AA00F88071 /* Debug */,
+				38959062277937AA00F88071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		387CC591270721FB00661F21 /* Build configuration list for PBXNativeTarget "SwfitUIText" */ = {
+		38959063277937AA00F88071 /* Build configuration list for PBXNativeTarget "MemoApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				387CC592270721FB00661F21 /* Debug */,
-				387CC593270721FB00661F21 /* Release */,
+				38959064277937AA00F88071 /* Debug */,
+				38959065277937AA00F88071 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 387CC57B270721FA00661F21 /* Project object */;
+	rootObject = 3895904D277937A800F88071 /* Project object */;
 }
