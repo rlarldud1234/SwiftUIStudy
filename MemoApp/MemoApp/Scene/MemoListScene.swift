@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  MemoListScene.swift
 //  MemoApp
 //
 //  Created by 김기영 on 2021/12/27.
@@ -49,4 +49,3 @@ struct MemoListScene_Previews: PreviewProvider {
             .environmentObject(DateFormatter.memoDateFormatter)
     }
 }
-
