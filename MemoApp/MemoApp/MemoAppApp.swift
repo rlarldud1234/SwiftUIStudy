@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct MemoAppApp: App {
+    let store = MemoStore()
+    
     var body: some Scene {
         WindowGroup {
             MemoListScene()
+                .environmentObject(store)
         }
     }
 }
