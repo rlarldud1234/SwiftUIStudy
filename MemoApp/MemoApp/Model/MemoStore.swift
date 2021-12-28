@@ -12,9 +12,9 @@ class MemoStore: ObservableObject {
     
     init() {
         list = [
-        Memo(content: "Lorem Ipsum"),
-        Memo(content: "안녕하세여ㅛ"),
-        Memo(content: "dadsadasd")
+            Memo(content: "Lorem Ipsum"),
+            Memo(content: "안녕하세여ㅛ"),
+            Memo(content: "dadsadasd")
         ]
     }
     
@@ -28,7 +28,9 @@ class MemoStore: ObservableObject {
     }
     
     func delete(memo: Memo) {
-        self.list.removeAll { $0 == memo }
+        DispatchQueue.main.async {
+            self.list.removeAll { $0 == memo }
+        }
     }
     
     func delete(set: IndexSet) {
