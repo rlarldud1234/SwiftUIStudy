@@ -29,7 +29,7 @@ struct ComposeScene: View {
             .navigationBarItems(leading: DismissButton(show: $show), trailing: SetButton(show: $show, content: $content, memo: memo))
         }
         .onAppear {
-            self.content = self.memo!.content
+            self.content = self.memo?.content ?? ""
         }
     }
 }
