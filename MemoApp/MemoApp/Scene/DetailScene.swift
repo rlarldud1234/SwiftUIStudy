@@ -14,6 +14,10 @@ struct DetailScene: View {
     @EnvironmentObject var formatter: DateFormatter
     
     @State private var showEditSheet = false
+    @State private var showDeleteAlert = false
+    
+    @Environment(\.presentationMode) var presentationMode
+    
     var body: some View {
         VStack {
             ScrollView {
@@ -30,11 +34,28 @@ struct DetailScene: View {
                             .padding()
                             .font(.footnote)
                         .foregroundColor(Color(uiColor: .secondaryLabel))
-                        
-                        Spacer()
                     }
                 }
                 HStack {
+                    
+                    Button(action: {
+                        self.showDeleteAlert.toggle()
+                        self.presentationMode.wrappedValue.dismiss()
+                    }, label: {
+                        Image(systemName: "trash")
+                            .tint(Color.red)
+                    })
+                        .padding()
+                        .alert(isPresented: $showDeleteAlert, content: {
+                            Alert(title: Text("삭제"), message: Text("게시물을 삭제하시겠습니까?"), primaryButton: .destructive(Text("삭제"),
+                                                                                                                  action: {
+                                self.store.delete(memo: self.memo)
+                            }),
+                                  secondaryButton: .cancel())
+                        })
+                    
+                    Spacer()
+                    
                     Button(action: {
                         self.showEditSheet.toggle()
                     }, label: {
@@ -46,6 +67,8 @@ struct DetailScene: View {
                                 .environmentObject(KeyboardObserver())
                         })
                 }
+                .padding(.leading)
+                .padding(.trailing)
             }
         }
         .navigationBarTitle("메모 보기")
